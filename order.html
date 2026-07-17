@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+<style>
+
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:orange;
+}
+
+input,select{
+    width:500px;
+    padding:10px;
+    margin:10px ;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    width:500px;
+    padding:10px;
+    background:orange;
+    border:none;
+    border-radius:20px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:red;
+}
+.pic{
+    display: flex;
+    justify-content: space-between;
+}
+.pic1{
+    margin-left: 30px;
+}
+    </style>
+
+<body>
+    <header>
+    <nav class="navbar">
+
+        <div class="logo">
+             <h2>☕Cafe</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        
+
+        </ul>
+
+    </nav>
+    </header>
+    <div class="pic">
+     
+    <form>
+
+<input type="text" placeholder="Your Name" required><br>
+
+<input type="tel" placeholder="Phone Number" required><br>
+
+<select>
+    <option>Cold coffee </option>
+    <option>pizza </option>
+    <option>Burger/option>
+    <option>Mocha</option>
+</select><br>
+
+<input type="number" placeholder="Quantity" min="1"><br>
+
+<button type="submit">Place Order</button>
+
+</form>
+ <div class="pic1">
+        <img src="./order picture.jpg">
+    </div>
+</div>
+</body>
+</html>

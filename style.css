@@ -1,0 +1,163 @@
+
+
+body{
+    background:#41151d;
+    color:white;
+}
+
+/* Navbar */
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+}
+
+.logo span{
+    font-size:30px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:orange;
+}
+
+/* Hero Section */
+
+.hero{
+    width:90%;
+    margin:auto;
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.content{
+    width:48%;
+}
+
+.content h3{
+    font-family:'Pacifico';
+    color:orange;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.content h1{
+    font-size:52px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.content p{
+    font-size:18px;
+    color:white;
+    margin-bottom:35px;
+    line-height:1.8;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:14px 35px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.order{
+    background:#f4a11a;
+    color:#222;
+}
+
+.order:hover{
+    background:white;
+}
+
+.contact{
+    border:2px solid white;
+    color:white;
+}
+
+.contact:hover{
+    background:white;
+    color:black;
+}
+
+/* Image */
+
+.image{
+    width:48%;
+    display:flex;
+    justify-content:center;
+}
+
+.image img{
+    width:520px;
+    max-width:100%;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    padding-top:40px;
+}
+
+.content,
+.image{
+    width:100%;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+.navbar{
+    flex-direction:column;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:20px;
+    gap:20px;
+}
+
+.content h1{
+    font-size:38px;
+}
+
+.content h3{
+    font-size:32px;
+}
+
+}
